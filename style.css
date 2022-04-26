@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    height: 80vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.continuar-login {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-width: 25rem;
+    min-height: 25rem;
+    background-color: #ffffff;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    border: 1px solid lightgray;
+}
+
+.logo img {
+    height: 5.5vh;
+}
+
+.profile-photo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 11vh;
+}
+
+.continuar {
+    background-color: #0095f6;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    width: 240px;
+}
+
+.trocar {
+    color: #0095f6;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.wrapper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.rodape-final {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.rodape a {
+    color:rgb(160, 160, 160);
+    font-size: 12px;
+}
+
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+.final a{
+    color:rgb(160, 160, 160);
+    font-size: 12px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .continuar-login{
+        width: 100%;
+        border: 1px solid transparent;
+    }
+}
